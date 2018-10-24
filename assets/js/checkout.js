@@ -10,7 +10,11 @@ window.onload = function() {
 	setTimeout(() => {
 		popularForm();
 		
-		Mercadopago.setPublishableKey("TEST-8c632497-e8e3-4101-b273-9455f15379b7");
+		// Sandbox
+		//Mercadopago.setPublishableKey("TEST-8c632497-e8e3-4101-b273-9455f15379b7");
+		// Produção
+		Mercadopago.setPublishableKey("APP_USR-3bef0e70-dd18-4bed-b1cc-1643d724d4d6");
+		
 		Mercadopago.getIdentificationTypes();
 		
 	}, 100);
