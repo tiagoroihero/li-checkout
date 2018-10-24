@@ -12,7 +12,7 @@ print_r($_POST);
 echo 'passou aqui 0<hr/>';
 
 $payment_data = array(
-        "transaction_amount" => 100,
+        "transaction_amount" => 0.01,
         "token" => $_POST['token'],
         "description" => "Title of what you are paying for",
         "installments" => 1,
