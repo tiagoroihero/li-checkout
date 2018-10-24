@@ -26,14 +26,13 @@ try {
     
 } catch (MercadoPagoException $e) {
     
-    echo 'Message: ', $e->getMessage(), ' Error: ', $e->getCode(), ' Trace: ', $e->getTraceAsString();
+    echo 'Message: ', $e->getMessage(), '<br/>Error: ', $e->getCode(), '<br/>Trace: ', $e->getTraceAsString(), '<br/>';
     
     var_dump($e);
     
 } finally {
     
     echo 'passou aqui no finally<br/>';
-    
 }
 
 echo 'passou aqui 2<hr/>';
