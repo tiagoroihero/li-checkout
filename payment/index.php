@@ -20,7 +20,17 @@ $payment_data = array(
 
 echo 'passou aqui 1<hr/>';
 
+try {
 $payment = $mp->post("/v1/payments", $payment_data);
+} catch (MercadoPagoException $e) {
+    
+    var_dump($e);
+    
+} finally {
+    
+    echo 'passou aqui no finally<br/>';
+    
+}
 
 echo 'passou aqui 2<hr/>';
 
