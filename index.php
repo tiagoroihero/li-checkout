@@ -1,4 +1,4 @@
-<form action="" method="get" id="pay" name="pay" >
+<form action="payment/" method="post" id="pay" name="pay" >
     <fieldset>
         <ul>
             <li>
