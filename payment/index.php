@@ -21,8 +21,12 @@ $payment_data = array(
 echo 'passou aqui 1<hr/>';
 
 try {
-$payment = $mp->post("/v1/payments", $payment_data);
+    
+    $payment = $mp->post("/v1/payments", $payment_data);
+    
 } catch (MercadoPagoException $e) {
+    
+    echo 'Message: ', $e->getMessage(), ' Error: ', $e->getCode(), ' Trace: ', $e->getTraceAsString();
     
     var_dump($e);
     
