@@ -5,6 +5,8 @@ $mp = new MP('TEST-5595184022048439-102214-1cfc3b276b896ba45756121ca2644cf1-3632
 
 print_r($_POST);
 
+echo 'passou aqui 0<hr/>';
+
 $payment_data = array(
         "transaction_amount" => 100,
         "token" => "ff8080814c11e237014c1ff593b57b4d",
@@ -16,7 +18,13 @@ $payment_data = array(
         )
 );
 
+echo 'passou aqui 1<hr/>';
+
 $payment = $mp->post("/v1/payments", $payment_data);
 
+echo 'passou aqui 2<hr/>';
+
 var_dump($payment);
+
+echo 'passou aqui 3<hr/>';
 ?>
