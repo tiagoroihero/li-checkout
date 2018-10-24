@@ -9,12 +9,12 @@ echo 'passou aqui 0<hr/>';
 
 $payment_data = array(
         "transaction_amount" => 100,
-        "token" => "ff8080814c11e237014c1ff593b57b4d",
+        "token" => $_POST['token'],
         "description" => "Title of what you are paying for",
         "installments" => 1,
         "payment_method_id" => "visa",
         "payer" => array (
-                "email" => "tiago.ferreira@roihero.com.br"
+                "email" => $_POST['email']
         )
 );
 

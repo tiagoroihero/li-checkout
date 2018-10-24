@@ -3,7 +3,7 @@
         <ul>
             <li>
                 <label for="email">Email</label>
-                <input id="email" name="email" value="test_user_19653727@testuser.com" type="email" placeholder="your email"/>
+                <input id="email" name="email" type="email" placeholder="your email"/>
             </li>
             <li>
                 <label for="cardNumber">Credit card number:</label>
