@@ -17,4 +17,6 @@ $payment_data = array(
 );
 
 $payment = $mp->post("/v1/payments", $payment_data);
+
+var_dump($payment);
 ?>
