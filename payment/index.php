@@ -16,7 +16,7 @@ $payment_data = array(
         "token" => $_POST['token'],
         "description" => "Title of what you are paying for",
         "installments" => 1,
-        "payment_method_id" => "mastercard",
+        "payment_method_id" => "master",
         "payer" => array (
                 "email" => $_POST['email']
         )
