@@ -25,10 +25,10 @@ try {
 
 
 
-// echo 'Status: ', $customer['status'], '<hr/>';
-//echo 'Id: ', $customer['response']['id'], '<hr/>';
+echo 'Status: ', $customer['status'], '<hr/>';
+echo 'Id: ', $customer['response']['id'], '<hr/>';
 
 print_r ($customer);
 
-//echo '<hr/>Json: ', json_encode($customer), '<hr/>';
+echo '<hr/>Json: ', json_encode($customer), '<hr/>';
 ?>
