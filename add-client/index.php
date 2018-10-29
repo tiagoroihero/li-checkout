@@ -1,6 +1,6 @@
 <?php
 
-require_once ('mercadopago.php');
+require_once ('../payment/mercadopago.php');
 
 // Sandbox
 $mp = new MP('TEST-5595184022048439-102214-1cfc3b276b896ba45756121ca2644cf1-363292093');
