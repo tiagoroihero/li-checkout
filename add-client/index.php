@@ -10,7 +10,7 @@ $mp = new MP('TEST-5595184022048439-102214-1cfc3b276b896ba45756121ca2644cf1-3632
 
 try {
     
-    $customer = $mp->post ("/v1/customers", array("email" => "test1@test.com"));
+    $customer = $mp->post ("/v1/customers", array("email" => "test" . rand(111, 999) . "@test.com"));
     
 } catch (MercadoPagoException $e) {
     
